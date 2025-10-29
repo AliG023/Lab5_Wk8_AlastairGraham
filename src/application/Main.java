@@ -50,15 +50,16 @@ public class Main extends Application {
 		employmentForm.getColumnConstraints().addAll(col1, col2);
 
 		// Form Fields ---------------------------------------
-		employmentForm.add(new Label("First Name:"), 0, 1);
+		employmentForm.add(new Label("First Name *:"), 0, 1);
 		employmentForm.add(new TextField(), 0, 2);
-		employmentForm.add(new Label("Last Name:"), 1, 1);
+		employmentForm.add(new Label("Last Name *:"), 1, 1);
 		employmentForm.add(new TextField(), 1, 2);
-		employmentForm.add(new Label("Email:"), 0, 3);
+		employmentForm.add(new Label("Email *:"), 0, 3);
 		TextField emailField = new TextField();
 		employmentForm.add(emailField, 0, 4, 2, 1);
 		employmentForm.add(new Label("Portfolio Website:"), 0, 5);
 		TextField portfolioField = new TextField();
+		portfolioField.setText("http://");
 		employmentForm.add(portfolioField, 0, 6, 2, 1);
 		employmentForm.add(new Label("Position You Are Applying For *:"), 0, 7);
 		employmentForm.add(new TextField(), 0, 8);
@@ -92,7 +93,7 @@ public class Main extends Application {
 		employmentForm.add(relocateBox, 0, 14);
 		// ---------------------------------------------------
 
-		employmentForm.add(new Label("Last Company Worked For:"), 0, 15);
+		employmentForm.add(new Label("Last Company You Worked For:"), 0, 15);
 		employmentForm.add(new TextField(), 0, 16);
 		employmentForm.add(new Label("Reference / Comments / Questions:"), 0, 17);
 		TextArea commentArea = new TextArea();
